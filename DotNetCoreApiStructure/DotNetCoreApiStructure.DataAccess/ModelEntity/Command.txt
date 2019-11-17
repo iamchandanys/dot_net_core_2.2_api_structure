@@ -1,0 +1,11 @@
+﻿Command to scaffold Database:
+Scaffold-DbContext "Server=.\sqlexpress;Database=Location;Integrated Security=true" Microsoft.EntityFrameworkCore.SqlServer -OutputDir ModelEntity
+
+Command to Scaffold Database Forcefully:
+Scaffold-DbContext "Server=.\sqlexpress;Database=Location;Integrated Security=true" Microsoft.EntityFrameworkCore.SqlServer -OutputDir ModelEntity -Force
+
+Command to Scaffold Database by TableNames:
+Scaffold-DbContext "Server=.\sqlexpress;Database=Location;Integrated Security=true" Microsoft.EntityFrameworkCore.SqlServer -Tables TableName1, TableName2 -OutputDir ModelEntity -Force
+
+Link Reffered:
+https://docs.microsoft.com/en-us/ef/core/managing-schemas/scaffolding
